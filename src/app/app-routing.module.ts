@@ -4,7 +4,10 @@ import { ArticleComponent } from './article/article.component';
 
 const routes: Routes = [
   {
-    path: "", component: ArticleComponent
+    path: "", component: ArticleComponent,
+  },
+  {
+    path: "quote", loadChildren: () => import('./quote/quote.module').then(mod => mod.QuoteModule)
   }
 ];
 

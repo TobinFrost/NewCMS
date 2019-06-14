@@ -1,0 +1,11 @@
+
+<h1>Today's Kanye Quote</h1>
+
+<li *ngFor="let quote of todayQuotes | async">
+    <q>{{quote.quote}}</q>
+    <br>
+    <i>Kanye West</i>
+
+  </li>
+
+  <button (click)="loadNewQuote()">Load Quote</button>
